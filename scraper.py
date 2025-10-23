@@ -80,8 +80,8 @@ class XidmetlerScraper:
             logger.warning("No prodwrap found on page")
             return listings
 
-        # Find all listing divs
-        listing_divs = prodwrap.find_all('div', {'class': 'nobj prod'})
+        # Find all listing divs that have both 'nobj' and 'prod' classes
+        listing_divs = prodwrap.find_all('div', class_=lambda x: x and 'nobj' in x and 'prod' in x)
         logger.info(f"Found {len(listing_divs)} listings on page")
 
         for div in listing_divs:
