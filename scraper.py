@@ -33,13 +33,7 @@ class XidmetlerScraper:
         """Initialize the scraper with session and headers"""
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
-            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-            'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8,ru;q=0.7,az;q=0.6',
-            'Accept-Encoding': 'gzip, deflate, br',
-            'DNT': '1',
-            'Connection': 'keep-alive',
-            'Upgrade-Insecure-Requests': '1'
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
         })
         self.all_listings = []
 
@@ -74,7 +68,7 @@ class XidmetlerScraper:
             List of dictionaries containing listing basic info
         """
         listings = []
-        prodwrap = soup.find('div', {'id': 'prodwrap', 'class': 'prodwrap'})
+        prodwrap = soup.find('div', {'id': 'prodwrap'})
 
         if not prodwrap:
             logger.warning("No prodwrap found on page")
