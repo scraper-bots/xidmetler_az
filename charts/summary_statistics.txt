@@ -1,0 +1,16 @@
+XIDMETLER.AZ MARKETPLACE - KEY BUSINESS METRICS
+============================================================
+
+Total Listings: 1600
+Average Price (AZN): 75.20
+Median Price (AZN): 22.00
+Price Range: 1 - 990 AZN
+Total Categories: 3
+Listings in Baku: 1594
+Listings with Phone: 1599
+Listings with Images: 1590
+Budget Services (0-50 AZN): 1033
+Mid-Range Services (51-100 AZN): 311
+Premium Services (100+ AZN): 231
+Top Category: Ustalar
+Top Category Volume: 883
